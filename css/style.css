@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%), url(https://source.unsplash.com/1920x1280/?nature);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.container {
+  box-shadow: 1px 0 8px #000;
+  padding: 1% 6%;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  min-height: 85vh;
+}
+
+.gradus {
+  margin: 50px auto;
+  text-shadow: 2px 2px 0 #000000, 8px 8px 0 #000000;
+  font-size: 80px;
+}
+
+.form {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  max-width: 300px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto 1rem;
+}
+
+#input-search {
+  outline: none;
+  padding: 1rem;
+  background-color: transparent;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+}
+
+#input-search::placeholder {
+  color: #fff;
+  font-weight: 400;
+}
+
+.city-name {
+  font-size: 25px;
+}
+
+#min {
+  font-size: 32px;
+}
+
+.footer {
+  display: flex;
+  margin: auto;
+  position: absolute;
+  bottom: 20px;
+  right: 150px;
+}
+
+.myinstagram, .mytelegram, .mygithub {
+  background-color: white;
+  margin: 0 10px;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .8s;
+  animation: iconami 2s ease-in-out infinite alternate;
+}
+
+.myinstagram:hover, .mytelegram:hover, .mygithub:hover {
+  background-color: #aaa;
+  box-shadow: 0 0 10px 8px #fff;
+}
+
+.myinstagram a {
+  color: brown; 
+}
+
+.mygithub a {
+  color: #000;
+}
+
+@keyframes iconami {
+  from {
+    transform: scale(0.8);
+  }
+
+  to {
+    transform: translateX(10px);
+  }
+}
